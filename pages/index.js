@@ -1,11 +1,12 @@
 import Head from 'next/head'
 import { Inter } from '@next/font/google'
 import HeroSection from '@/components/hero/HeroSection'
+import HomePage from '@/components/home/HomePage'
 
 
 const inter = Inter({ subsets: ['latin'] })
 
-export default function Home() {
+export default function Home({ data }) {
   return (
     <>
       <Head>
@@ -16,8 +17,18 @@ export default function Home() {
       </Head>
       <main>
         <HeroSection/>
-        
+        <HomePage data={data}/>
       </main>
     </>
   )
+}
+
+export async function getServerSideProps() {
+  const { events_categories } = await import ('/data/data.json')
+
+  return {
+    props: {
+      data: events_categories
+    }
+  }
 }

@@ -1,0 +1,264 @@
+{
+    "events_categories": [
+        {
+            "id": "london",
+            "title": "United Kingdom",
+            "description": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem",
+            "imageHome": "/image/gallery/uk/london_main.jpg",
+            "image": "/image/gallery/uk/tower_bridge.jpg"
+        },
+      
+        {
+            "id": "france",
+            "title": "France",
+            "description": "corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate.",
+            "imageHome": "/image/gallery/france/france_main.jpg",
+            "image": "/image/gallery/france/euffel2.jpeg"
+        },
+        {
+            "id": "italy",
+            "title": "Italy",
+            "description": "Rome",
+            "imageHome":"/image/gallery/italy/italy_main.jpg",
+            "image": "/image/gallery/italy/fontan-de-trevi.jpg"
+        },
+      
+        {
+            "id": "spain",
+            "title": "Spain",
+            "description": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscisfa.",
+            "imageHome":"/image/gallery/spain/madrid_main.jpg",
+            "image": "/image/gallery/spain/spain.jpg"
+        },
+       
+        {
+            "id": "norway",
+            "title": "Norway",
+            "description": "An intresting country",
+            "imageHome": "/image/gallery/norway/norway_main.jpg",
+            "image": "/image/gallery/norway/aurora.jpg"
+        },
+       
+       
+        {
+            "id": "turkey",
+            "title": "Istanbul",
+            "description": "Istanbul",
+            "imageHome": "/image/gallery/turkey/istanbul3.jpeg",
+            "image": "/image/gallery/turkey/galata.jpeg"
+        },
+        {
+            "id": "holland",
+            "title": "Holland",
+            "description": "Amsterdam",
+            "imageHome":"/image/gallery/holland/holland_main.jpeg",
+            "image": "/image/gallery/holland/keukenhof1.jpg"
+        },
+        {
+            "id": "greece",
+            "title": "Greece",
+            "description": "Greece",
+            "imageHome":"/image/gallery/greece/greece_main.jpg",
+            "image": "/image/gallery/greece/santorini-oia.jpeg"
+        }
+
+       
+
+    ],
+    "allEvents": [
+        {
+            "id": "london-comic-con-winter",
+            "title": "London Comic Con Winter",
+            "city": "london",
+            "description": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscisfa.",
+            "image": "https://images.unsplash.com/photo-1608889476561-6242cfdbf622?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80",
+            "emails_registered": []
+        },
+        {
+            "id": "hyde-park-winter-wonderland",
+            "title": "Hyde Park Winter Wonderland",
+            "city": "london",
+            "description": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscisfa.",
+            "image": "https://hydeparkwinterwonderland.com/static/252d7fe6693a6a8b1887bd2049204103/039f7/2021-503x503-3.webp",
+            "emails_registered": []
+        },
+        {
+            "id": "new-years-eve-in-london-2023",
+            "title": "stonehenge",
+            "city": "london",
+            "description": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscisfa.",
+            "image": "/image/gallery/uk/stonhenge.jpg",
+            "emails_registered": []
+        },
+        {
+            "id": "'edtech-world-summit-2022",
+            "title": "Westminster Abbey",
+            "city": "london",
+            "description": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscisfa.",
+            "image": "https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+            "emails_registered": []
+        },
+        {
+            "id": "sigala-at-electric-brixton",
+            "title": "Sigala at Electric Brixton",
+            "city": "london",
+            "description": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscisfa.",
+            "image": "https://images.unsplash.com/photo-1478147427282-58a87a120781?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+            "emails_registered": []
+        },
+        {
+            "id": "holland-amsterdam",
+            "title": "amsterdam",
+            "city": "holland",
+            "description": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscisfa.",
+            "image": "/image/gallery/holland/amsterdam.jpg",
+            "emails_registered": []
+        },
+        {
+            "id": "holland-tulips",
+            "title": "tulips-field",
+            "city": "holland",
+            "description": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscisfa.",
+            "image": "/image/gallery/holland/tulips.jpg",
+            "emails_registered": []
+        },
+        {
+            "id": "paris-euffel",
+            "title": "Paris",
+            "city": "france",
+            "description": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscisfa.",
+            "image": "/image/gallery/france/paris-france.jpeg",
+            "emails_registered": [
+               
+            ]
+        },
+        {
+            "id": "innovation-summit-san-francisco",
+            "title": "Louvre",
+            "city": "france",
+            "description": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscisfa.",
+            "image": "/image/gallery/france/louvre.jpeg",
+            "emails_registered": []
+        },
+        {
+            "id": "greece-santorini",
+            "title": "Santorini",
+            "city": "greece",
+            "description": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscisfa.",
+            "image": "/image/gallery/greece/santorini2.jpeg",
+            "emails_registered": []
+        },
+        {
+            "id": "greece-ancient",
+            "title": "Ancient theatre",
+            "city": "greece",
+            "description": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscisfa.",
+            "image": "/image/gallery/greece/theatre.jpeg",
+            "emails_registered": []
+        },
+        {
+            "id": "barcelona",
+            "title": "barcelona",
+            "city": "spain",
+            "description": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscisfa.",
+            "image": "/image/gallery/spain/barcelona1.jpg",
+            "emails_registered": [
+               
+            ]
+        },
+        {
+            "id": "Madrid",
+            "title": "Madrid",
+            "city": "spain",
+            "description": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscisfa.",
+            "image": "/image/gallery/spain/madrid1.jpg",
+            "emails_registered": []
+        },
+        {
+            "id": "costa-brava",
+            "title": "costa-brava",
+            "city": "spain",
+            "description": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscisfa.",
+            "image": "/image/gallery/spain/costa-brava.jpg",
+            "emails_registered": []
+        },
+        {
+            "id": "world-congress-2022---barcelona",
+            "title": "World Congress 2022 - Barcelona",
+            "city": "spain",
+            "description": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscisfa.",
+            "image": "https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+            "emails_registered": []
+        },
+        {
+            "id": "riskminds-international",
+            "title": "RiskMinds International",
+            "city": "spain",
+            "description": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscisfa.",
+            "image": "/snow.jpg",
+            "emails_registered": []
+        },
+        {
+            "id": "north-in",
+            "title": "Events in Norway",
+            "city": "norway",
+            "description": "Very cold country.",
+            "image": "/forest.jpg",
+            "emails_registered": []
+        },
+        {
+            "id": "italy-colosseum",
+            "title": "colosseum",
+            "city": "italy",
+            "shortdesc":"The Colosseum has been a symbol of Rome since 80 AD, and today it’s a top monument in Italy.",
+            "description": "Colosseum, also called Flavian Amphitheatre, giant amphitheatre built in Rome under the Flavian emperors. Construction of the Colosseum was begun sometime between 70 and 72 CE during the reign of Vespasian. It is located just east of the Palatine Hill, on the grounds of what was Nero’s Golden House. The artificial lake that was the centrepiece of that palace complex was drained, and the Colosseum was sited there, a decision that was as much symbolic as it was practical. Vespasian, whose path to the throne had relatively humble beginnings, chose to replace the tyrannical emperor’s private lake with a public amphitheatre that could host tens of thousands of Romans. Some 50,000 spectators once gathered in the amphitheater’s tiered seats to watch gladiatorial games, and though parts of its original marble facade were pilfered over the years to build the likes of St. Peter’s Basilica, the Colosseum remains remarkably intact 2,000 years later.",
+            "address":"Piazza del Colosseo, Rome, 00184",
+            "image": "/image/gallery/italy/colosseum.jpg",
+            "image2":"https://images.pexels.com/photos/397431/pexels-photo-397431.jpeg?auto=compress&cs=tinysrgb&w=600",
+            "emails_registered": []
+        },
+        {
+            "id": "italy-venice",
+            "title": "venice",
+            "city": "italy",
+            "shortdesc": "corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate.",
+            "description": "The Colosseum has been a symbol of Rome since 80 AD, and today it’s a top monument in Italy. Some 50,000 spectators once gathered in the amphitheater’s tiered seats to watch gladiatorial games, and though parts of its original marble facade were pilfered over the years to build the likes of St. Peter’s Basilica, the Colosseum remains remarkably intact 2,000 years later.",
+            "image": "/image/gallery/italy/invenice.jpg",
+            "emails_registered": []
+        },
+        {
+            "id": "italy-milan",
+            "title": "milan",
+            "city": "italy",
+            "shortdesc": "corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate.",
+            "description": "The Colosseum has been a symbol of Rome since 80 AD, and today it’s a top monument in Italy. Some 50,000 spectators once gathered in the amphitheater’s tiered seats to watch gladiatorial games, and though parts of its original marble facade were pilfered over the years to build the likes of St. Peter’s Basilica, the Colosseum remains remarkably intact 2,000 years later.",
+            "image": "/image/gallery/italy/duomo-cathedral-square.jpg",
+            "emails_register": []
+        },
+        {
+            "id": "turkey-istanbul",
+            "title": "istanbul",
+            "city": "turkey",
+            "description": "The Colosseum has been a symbol of Rome since 80 AD, and today it’s a top monument in Italy. Some 50,000 spectators once gathered in the amphitheater’s tiered seats to watch gladiatorial games, and though parts of its original marble facade were pilfered over the years to build the likes of St. Peter’s Basilica, the Colosseum remains remarkably intact 2,000 years later.",
+            "image": "/image/gallery/turkey/turkey.jpeg",
+            "emails_registered": []
+        },
+        {
+            "id": "turkey-istanbul",
+            "title": "cappadocia",
+            "city": "turkey",
+            "description": "The Colosseum has been a symbol of Rome since 80 AD, and today it’s a top monument in Italy. Some 50,000 spectators once gathered in the amphitheater’s tiered seats to watch gladiatorial games, and though parts of its original marble facade were pilfered over the years to build the likes of St. Peter’s Basilica, the Colosseum remains remarkably intact 2,000 years later.",
+            "image": "/image/gallery/turkey/cappadokia.jpg",
+            "emails_registered": []
+        },
+        {
+            "id": "turkey-istanbul",
+            "title": "efes",
+            "city": "turkey",
+            "description": "The Colosseum has been a symbol of Rome since 80 AD, and today it’s a top monument in Italy. Some 50,000 spectators once gathered in the amphitheater’s tiered seats to watch gladiatorial games, and though parts of its original marble facade were pilfered over the years to build the likes of St. Peter’s Basilica, the Colosseum remains remarkably intact 2,000 years later.",
+            "image": "/image/gallery/turkey/efes.jpeg",
+            "emails_registered": []
+        }
+
+    ]
+}

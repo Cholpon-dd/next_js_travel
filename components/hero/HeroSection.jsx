@@ -1,5 +1,3 @@
-import React from 'react';
-
 const HeroSection = () => {
   return (
     <div
@@ -8,7 +6,7 @@ const HeroSection = () => {
     >
       <div
         className='bg-[url("../public/image/gallery/norway_bg.jpg")] 
-      bg-cover w-full h-screen absolute top-0 -z-10'
+      bg-cover w-full h-screen absolute top-0 -z-10 bg-fixed'
       />
 
       <div
@@ -24,7 +22,7 @@ const HeroSection = () => {
         </h2>
         <button
           className="relative border-2 border-r-white  bg-transparent py-2 px-5 font-medium uppercase
-         transition-colors before:absolute before:left-0 before:top-0 before:-z-10 before:h-full before:w-full before:origin-top-left before:scale-y-0 before:bg-blue-500 before:transition-transform before:duration-300 before:content-[''] hover:text-white before:hover:scale-y-100  rounded-md z-10 w-32 h-10 text-white mt-14"
+         transition-colors before:absolute before:left-0 before:top-0 before:-z-10 before:h-full before:w-full before:origin-top-left before:scale-y-0 before:bg-cyan-600 before:transition-transform before:duration-300 before:content-[''] hover:text-white before:hover:scale-y-100  rounded-md z-10 w-32 h-10 text-white mt-14"
         >
           Explore
         </button>
