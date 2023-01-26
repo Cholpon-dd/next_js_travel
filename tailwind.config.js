@@ -14,7 +14,7 @@ module.exports = {
         'logo-main': '#9b0404'
       },
       backgroundImage: {
-        'hero-pattern': "url('../public/image/bg.jpeg')",
+        'hero-pattern': 'url("../public/image/gallery/norway_bg.jpg")',
         'group-people': "url('../public/image/gallery/group.jpeg"
       },
       width: {
@@ -36,6 +36,9 @@ module.exports = {
         '2/1':'2/1',
         '3/2':'3/2'
       },
+    borderRadius: {
+      'tl': "90px"
+    }
       
     },
     

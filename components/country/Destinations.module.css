@@ -1,0 +1,74 @@
+.card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.card:nth-child(even) {
+    direction: rtl;
+}
+
+.content {
+    width: 40%;
+    padding: 50px;
+    background: #7F7FD5;
+    border-radius: 20px;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+
+}
+
+.img {
+    filter: drop-shadow(-10px -2px 11px rgba(0, 0, 0, 0.46));
+    border-radius: 10px;
+    object-fit: cover;
+    width: 450px;
+    height: 300px;
+
+}
+
+/* .container {
+    display: grid;
+    /* grid-gap: 5px; */
+/* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
+/* grid-auto-rows: 125px; */
+/* grid-auto-flow: dense; */
+
+/* }  */
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    /* grid-auto-rows: 125px; */
+    grid-auto-flow: dense;
+    gap: 20px;
+    grid-template-areas:
+        "foto1 foto2 foto2 foto4"
+        "foto1 foto3 foto3 foto4"
+}
+
+.foto1 {
+    grid-area: foto1;
+}
+
+.foto2 {
+    grid-area: foto2;
+}
+
+.foto3 {
+    grid-area: foto3;
+    height: 330px;
+}
+
+.foto4 {
+    grid-area: foto4;
+
+}

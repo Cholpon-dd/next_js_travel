@@ -5,14 +5,14 @@ const HeroSection = () => {
   relative h-screen"
     >
       <div
-        className='bg-[url("../public/image/gallery/norway_bg.jpg")] 
-      bg-cover w-full h-screen absolute top-0 -z-10 bg-fixed'
+        className="bg-hero-pattern bg-cover w-full h-screen absolute top-0 -z-10 bg-fixed"
+        // [url("../public/image/gallery/norway_bg.jpg")]
       />
 
       <div
         className="h-full w-full bg-gradient-to-b from-black/10 to-black/50
       absolute top-0 z-0"
-      ></div>
+      />
       <div className="flex flex-col items-center justify-between z-10">
         <h1 className="text-4xl font-bold uppercase text-center tracking-wider pb-4 text-white">
           Adventure begins here
