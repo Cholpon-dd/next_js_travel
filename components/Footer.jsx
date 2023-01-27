@@ -2,10 +2,10 @@ import Link from 'next/link';
 
 const Footer = () => {
   return (
-    <footer className="border-t border-gray-800 mt-10 py-10 px-8">
+    <footer className="border-t border-gray-800 mt-10 py-10 px-8 bg-slate-600 text-slate-400">
       <div className="md:flex max-w-7xl mx-auto">
         <div className="w-full mb-5 md:w-2/5">
-          <h6 className="dark:text-white font-semibold text-gray-700 mb-3">Company</h6>
+          <h6 className="dark:text-white font-semibold text-slate-300 mb-3">Company</h6>
           <ul>
             <li>
               <a className="footer-link" href="#">
@@ -21,7 +21,7 @@ const Footer = () => {
         </div>
 
         <div className="w-full mb-5 md:w-2/5">
-          <h6 className="dark:text-white font-semibold text-gray-700 mb-3">Content</h6>
+          <h6 className="dark:text-white font-semibold text-slate-300 mb-3">Content</h6>
           <ul>
             <li>
               <Link href="/destinations" className="footer-link">
@@ -42,7 +42,7 @@ const Footer = () => {
         </div>
 
         <div className="w-full md:w-1/5">
-          <h6 className="dark:text-white font-semibold text-gray-700 mb-3">Contact Us</h6>
+          <h6 className="dark:text-white font-semibold text-slate-300 mb-3">Contact Us</h6>
           <ul className="flex">
             <li className="mr-2">
               <a className="footer-link" href="#">

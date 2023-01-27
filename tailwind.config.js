@@ -10,6 +10,9 @@ module.exports = {
       gridTemplateRows:{
         'layout': 'auto 1fr auto'
       },
+      gridTemplateColumns: {
+        fluid: "repeat(auto-fit, minmax(300px, 1fr))",
+      },
       colors:{
         'logo-main': '#9b0404'
       },
