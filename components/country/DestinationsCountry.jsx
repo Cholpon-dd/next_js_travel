@@ -19,9 +19,12 @@ const DestinationsCountry = ({ data, pageName }) => {
               <Link
                 key={id}
                 href={`/destinations/${city}/${id}`}
-                className="font-bold text-purple-800"
+                className="font-extrabold text-cyan-700 leading-10"
               >
-                Learn more
+                <p className="relative group">
+                  <span>Learn more</span>
+                  <span className="absolute -bottom-1 left-0 w-0 h-1 bg-cyan-400 transition-all group-hover:w-full"></span>
+                </p>
               </Link>
             </div>
           </div>

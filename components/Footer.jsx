@@ -8,13 +8,18 @@ const Footer = () => {
           <h6 className="dark:text-white font-semibold text-slate-300 mb-3">Company</h6>
           <ul>
             <li>
-              <a className="footer-link" href="#">
-                Team
-              </a>
-            </li>
-            <li>
               <Link href="/about" className="footer-link">
                 About Us
+              </Link>
+            </li>
+            <li>
+              <Link className="footer-link" href="/#mission">
+                Our mission
+              </Link>
+            </li>
+            <li>
+              <Link className="footer-link" href="/about/#team">
+                Team
               </Link>
             </li>
           </ul>
@@ -24,19 +29,19 @@ const Footer = () => {
           <h6 className="dark:text-white font-semibold text-slate-300 mb-3">Content</h6>
           <ul>
             <li>
+              <Link href="/#advantage" className="footer-link">
+                Advantages
+              </Link>
+            </li>
+            <li>
               <Link href="/destinations" className="footer-link">
                 Destinations
               </Link>
             </li>
             <li>
-              <a href="#testim" className="footer-link">
+              <Link href="/#testim" className="footer-link">
                 Testimonials
-              </a>
-            </li>
-            <li>
-              <a className="footer-link" href="#">
-                Documentation
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

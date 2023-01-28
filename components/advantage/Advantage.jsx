@@ -6,8 +6,7 @@ import visa from '../../public/image/icons/visa.svg';
 
 const Advantage = () => {
   return (
-    <div className="md:flex max-w-7xl mx-auto">
-      {/* className="flex items-center justify-around px-2 mb-16" */}
+    <div className="md:flex max-w-7xl mx-auto" id="advantage">
       <div className="flex items-center flex-col">
         <Image src={headset} alt="headset" width={48} height={48} className="" />
         <h3 className="md:pt-4 pb-2 text-2xl text-slate-800 font-bold lg:text-xl">CUSTOMER CARE</h3>

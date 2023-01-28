@@ -53,7 +53,7 @@ const Testimonials = () => {
 
   return (
     <div className="mt-16 mb-16">
-      <h2 className="text-center text-slate-800 text-4xl  pb-10 capitalize">
+      <h2 className="text-center text-slate-800 text-5xl  pb-10 capitalize">
         A customer said about us:{' '}
       </h2>
       <div ref={carousel} className={styles.carousel} id="testim">

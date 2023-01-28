@@ -8,9 +8,9 @@ body {
 }
 
 .header-link {
-  @apply transition-all duration-300 inline-block py-3 px-2 border-b-2 border-transparent
+  @apply transition-all duration-300 inline-block py-3 px-3 border-b-2 border-transparent
 }
 
 .header-btn {
-  @apply transition-all duration-300 ml-2 py-1 px-3 border-2 rounded-full border-indigo-600 text-indigo-600
+  @apply transition-all duration-300 ml-2 py-2 px-4 border-2 rounded-full border-indigo-600 text-indigo-600
 }

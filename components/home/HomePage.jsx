@@ -1,9 +1,9 @@
 import CountrysCard from '../coutry/CountrysCard';
 import PhotoGallery from '../gallery/PhotoGallery';
 import Testimonials from '../testimonials/Testimonials';
-import Direct from '../direct/Direct';
 import WorldMap from '../map/Map';
 import Advantage from '../advantage/Advantage';
+import Mission from '../mission/Mission';
 
 const HomePage = ({ data }) => {
   return (
@@ -14,7 +14,7 @@ const HomePage = ({ data }) => {
         Popular Destinations
       </h2>
       <CountrysCard data={data} />
-      <Direct />
+      <Mission />
       <PhotoGallery />
       <Testimonials />
       <WorldMap />
