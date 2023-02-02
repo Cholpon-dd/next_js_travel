@@ -1,19 +1,36 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import styles from './Destinations.module.css';
+import { motion } from 'framer-motion';
+import { fadeIn, textAnimation } from '@/variants';
 
 const DestinationsCountry = ({ data, pageName }) => {
   return (
     <div className="px-5 mx-auto">
-      <h2 className="font-bold text-center text-3xl capitalize py-10 md:text-4xl mt-10 mb-10 lg:text-5xl  lg:mt-20 text-slate-800">
+      <motion.h2
+        variants={textAnimation}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true, amount: 0.2 }}
+        custom={1}
+        className="font-bold text-center text-3xl capitalize py-10 md:text-4xl mt-10 mb-10 lg:text-5xl  lg:mt-20 text-slate-800"
+      >
         Trip to {pageName}
-      </h2>
+      </motion.h2>
 
       <div className="flex md:flex-wrap flex-col gap-20">
         {data.map(({ id, city, imageDesc, title, shortdesc }) => (
-          <div key={id} className={`${styles.card}`}>
+          <motion.div
+            variants={fadeIn('right', 'tween', 0.3, 1)}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, amount: 0.3 }}
+            custom={2}
+            key={id}
+            className={`${styles.card}`}
+          >
             <Image src={imageDesc} alt={title} width={400} height={300} className={styles.img} />
-            <div className={styles.content}>
+            <div key={id} className={styles.content}>
               <h3 className="sm:text-lg md:text-3xl  text-white uppercase mb-2">{title}</h3>
               <p className="sm:text-md md:text-lg text-white">{shortdesc}</p>
               <Link
@@ -27,7 +44,7 @@ const DestinationsCountry = ({ data, pageName }) => {
                 </p>
               </Link>
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
     </div>

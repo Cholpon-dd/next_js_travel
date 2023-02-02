@@ -14,3 +14,7 @@ body {
 .header-btn {
   @apply transition-all duration-300 ml-2 py-2 px-4 border-2 rounded-full border-indigo-600 text-indigo-600
 }
+
+.footer-link {
+  @apply transition-all duration-300 inline-block text-gray-500 py-2
+}

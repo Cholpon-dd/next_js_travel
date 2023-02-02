@@ -1,14 +1,35 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import { motion } from 'framer-motion';
+import { listVariants, fadeIn } from '@/variants';
+
 const AllDestinations = ({ data }) => {
   return (
-    <section className="px-5 mx-auto">
-      <h2 className="font-bold text-center text-3xl py-10 md:text-4xl mt-10 lg:text-5xl capitalize lg:mt-20 text-slate-800">
+    <section>
+      <motion.h2
+        variants={fadeIn('down', 'tween', 0.2, 1)}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: false, amount: 0.25 }}
+        custom={1}
+        className="font-bold text-center text-3xl py-10 md:text-4xl mt-10 lg:text-5xl capitalize lg:mt-20 text-slate-800"
+      >
         Explore by destination
-      </h2>
-      <div className="mx-auto grid md:grid-cols-2 max-w-7xl lg:grid-cols-3 gap-8 pt-6 px-4 sm:grid-cols-1 lg:px-8">
-        {data.map(({ id, image, title, description }) => (
-          <div
+      </motion.h2>
+      <motion.div
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: false, amount: 0.3 }}
+        custom={2}
+        className="mx-auto grid md:grid-cols-2 max-w-7xl lg:grid-cols-3 gap-8 pt-6 px-4 sm:grid-cols-1 lg:px-8"
+      >
+        {data.map(({ id, image, title, description, i }) => (
+          <motion.div
+            variants={listVariants}
+            initial="hidden"
+            whileInView="show"
+            custom={i + 1}
+            viewport={{ once: false, amount: 0.3 }}
             key={id}
             className="shadow-md w-full rounded-xl rounded-tl-[90px] rounded-tr-[90px] relative overflow-hidden flex flex-col"
           >
@@ -32,9 +53,9 @@ const AllDestinations = ({ data }) => {
             >
               Explore
             </Link>
-          </div>
+          </motion.div>
         ))}
-      </div>
+      </motion.div>
     </section>
   );
 };

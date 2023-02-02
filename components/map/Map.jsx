@@ -1,13 +1,27 @@
 import Image from 'next/image';
 import styles from './Map.module.css';
+import { motion } from 'framer-motion';
+import { fadeIn, textContainer } from '@/variants';
 
 const WorldMap = () => {
   return (
-    <div className="h-auto mx-14 my-16">
-      <h2 className="text-center text-5xl md:text-4xl lg:text-5xl my-10 lg:mt-20 text-slate-800 capitalize">
+    <motion.div
+      variants={fadeIn('up', 'tween', 0.2, 1)}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: false, amount: 0.25 }}
+      className="h-auto mx-14 my-16"
+    >
+      <motion.h2
+        variants={textContainer}
+        className="text-center text-5xl my-10 lg:mt-20 text-slate-800 capitalize"
+      >
         With us you will receive
-      </h2>
-      <div className="flex justify-between items-center mb-24">
+      </motion.h2>
+      <motion.div
+        variants={fadeIn('up', 'tween', 0.2, 1)}
+        className="flex justify-between items-center mb-24"
+      >
         <ol className={styles.list}>
           <li className="font-bold text-2xl text-slate-800">
             Best offers at low prices
@@ -29,7 +43,7 @@ const WorldMap = () => {
             </p>
           </li>
         </ol>
-        <div className="relative">
+        <motion.div variants={fadeIn('up', 'tween', 0.3, 1)} className="relative">
           <Image
             src="/image/gallery/bridge.jpeg"
             alt="bridge"
@@ -46,11 +60,14 @@ const WorldMap = () => {
             priority
             className={`${styles.img} ${styles.img2}`}
           />
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
 
-      <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-10 mt-4">
-        <div>
+      <motion.div
+        variants={fadeIn('up', 'tween', 0.4, 2)}
+        className="grid sm:grid-cols-1 md:grid-cols-2 gap-10 mt-4"
+      >
+        <motion.div variants={fadeIn('up', 'tween', 0.4, 2)}>
           <Image
             src="/image/gallery/world-map2.png"
             alt="map"
@@ -59,8 +76,11 @@ const WorldMap = () => {
             priority
             className="rounded-md"
           />
-        </div>
-        <div className="font-bold text-2xl text-slate-800">
+        </motion.div>
+        <motion.div
+          variants={fadeIn('up', 'tween', 0.4, 2)}
+          className="font-bold text-2xl text-slate-800"
+        >
           <h3 className="capitalize">Historical places, forests, mountains, sea.</h3>
           <h3 className="capitalize">Where do you want?</h3>
           <p className="font-normal text-lg text-slate-600 px-2 py-3">
@@ -68,11 +88,11 @@ const WorldMap = () => {
           </p>
           <p className="font-normal text-lg text-slate-600 px-2 py-3">
             With 24/7 customer service, flexible booking conditions and extensive insurance options,
-            we are there for you when plans change.{' '}
+            we are there for you when plans change.
           </p>
-        </div>
-      </div>
-    </div>
+        </motion.div>
+      </motion.div>
+    </motion.div>
   );
 };
 

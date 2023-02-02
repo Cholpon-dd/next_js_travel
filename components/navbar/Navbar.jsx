@@ -1,18 +1,28 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useState } from 'react';
+import { motion } from 'framer-motion';
+import { headerVarinats } from '@/variants';
 
 const navigation = [
   { id: 1, title: 'Home', path: '/' },
   { id: 2, title: 'Destinations', path: '/destinations' },
   { id: 3, title: 'About Us', path: '/about' },
 ];
+
 const Navbar = () => {
   const { pathname } = useRouter();
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="w-full h-14 border-b-2 border-b-slate-400 fixed top-0 left-0 flex justify-between items-center z-10 lg:font-semibold tracking-wider text-lg backdrop-filter backdrop-blur-sm bg-opacity-20">
+    <motion.nav
+      initial="hidden"
+      animate="show"
+      variants={headerVarinats}
+      whileInView="show"
+      viewport={{ once: false, amount: 0.25 }}
+      className="w-full h-14 border-b-2 border-b-slate-400 fixed top-0 left-0 flex justify-between items-center z-10 lg:font-semibold tracking-wider text-lg backdrop-filter backdrop-blur-sm bg-opacity-20"
+    >
       <Link
         href="/"
         className="pl-8 text-cyan-600 uppercase italic hover:border-cyan-800 transition-all duration-300"
@@ -25,8 +35,8 @@ const Navbar = () => {
             <Link
               href={path}
               className={`${
-                pathname === path ? 'text-cyan-700 font-extrabold  px-4 rounded-md' : ''
-              } header-link hover:text-slate-800 hover:border-cyan-800 transition-all duration-300`}
+                pathname === path ? 'text-cyan-700 font-extrabold' : ''
+              } header-link text-cyan-800 hover:text-cyan-900 hover:border-cyan-800 transition-all duration-300`}
             >
               {title}
             </Link>
@@ -65,15 +75,15 @@ const Navbar = () => {
           </svg>
         )}
       </button>
-      <div className={`lg:hidden  ${open ? 'block' : 'hidden'}`}>
-        <ul className="h-px justify-between items-center gap-4 cursor-pointer pr-8 ">
+      <div className={`lg:hidden  ${open ? 'block shadow-md' : 'hidden'}`}>
+        <ul className="h-px justify-between items-center gap-4 cursor-pointer pr-8 bg-white">
           {navigation.map(({ id, title, path }) => (
             <li key={id}>
               <Link
                 href={path}
                 className={`${
-                  pathname === path ? 'text-white bg-cyan-600 px-4 rounded-md' : ''
-                } header-link hover:text-slate-800 hover:border-cyan-800 transition-all duration-300`}
+                  pathname === path ? 'text-white bg-cyan-600  px-4 rounded-md' : ''
+                } header-link bg-white w-full z-30 hover:text-slate-800 hover:border-cyan-800 transition-all duration-300`}
               >
                 {title}
               </Link>
@@ -81,7 +91,7 @@ const Navbar = () => {
           ))}
         </ul>
       </div>
-    </nav>
+    </motion.nav>
   );
 };
 

@@ -2,25 +2,26 @@ import { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
 import styles from './Testimonials.module.css';
 import { motion } from 'framer-motion';
+import { textVariant2, fadeIn } from '@/variants';
 
 const testim = [
   {
     id: '1',
     img: '/image/gallery/users/71.jpg',
     userName: 'Maria Kate',
-    text: 'I can’t describe my experience with OnATrip, this was one of my first experience and hopefully way many more to come. Our guide Tony was very helpful and knowledgeable. Thank you OnATrip. My friends are already booking trips with OnATrip!!',
+    text: 'I can not describe my experience with OnATrip, this was one of my first experience and hopefully way many more to come. Our guide Tony was very helpful and knowledgeable. Thank you OnATrip. My friends are already booking trips with OnATrip!!',
   },
   {
     id: '2',
     img: '/image/gallery/users/36.jpg',
     userName: 'Nanny Crowl',
-    text: 'I think the trip, overall, was a huge success. Everything went as planned. I referred to that sO many times for details, using both the schedule by day and the pdf of the Final Itinerary. Both had different info that I needed to see....',
+    text: 'I think the trip, overall, was a huge success. Everything went as planned. I referred to that so many times for details, using both the schedule by day and the pdf of the Final Itinerary. Both had different info that I needed to see....',
   },
   {
     id: '3',
     img: '/image/gallery/users/37.jpg',
     userName: 'Leam Jason',
-    text: 'We are back from Santorini and wanted to send you a sincere thank you for helping us organize our trip.  It was indeed the trip of a lifetime and we are so grateful and appreciative of the work you did to help make it so magical. ',
+    text: 'We are back from Santorini and wanted to send you a sincere thank you for helping us organize our trip. It was indeed the trip of a lifetime and we are so grateful and appreciative of the work you did to help make it so magical.',
   },
   {
     id: '5',
@@ -53,10 +54,22 @@ const Testimonials = () => {
 
   return (
     <div className="mt-16 mb-16">
-      <h2 className="text-center text-slate-800 text-5xl  pb-10 capitalize">
+      <motion.h2
+        variants={textVariant2}
+        initial="hidden"
+        whileInView="show"
+        className="text-center text-slate-800 text-5xl  pb-10 capitalize"
+      >
         A customer said about us:{' '}
-      </h2>
-      <div ref={carousel} className={styles.carousel} id="testim">
+      </motion.h2>
+      <motion.div
+        variants={fadeIn('right', 'tween')}
+        initial="hidden"
+        whileInView="show"
+        ref={carousel}
+        className={styles.carousel}
+        id="testim"
+      >
         <motion.div drag="x" dragConstraints={{ right: 0, left: -width }} className="flex lg:gap-4">
           {testim.map(({ id, userName, text, img }) => (
             <div key={id} className={styles.item}>
@@ -74,7 +87,7 @@ const Testimonials = () => {
             </div>
           ))}
         </motion.div>
-      </div>
+      </motion.div>
     </div>
   );
 };
